@@ -3,3 +3,6 @@
 </a>
 <br>
 Exploring <a href="https://github.com/nathanmarz/storm">Twitter Storm</a>
+<br><br>
+Distributed and fault-tolerant realtime computation: stream processing, continuous computation, distributed RPC, and more 
+http://storm-project.net
