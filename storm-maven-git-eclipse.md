@@ -103,5 +103,5 @@ You can use `https` to communicate with GitHub, but I suggest you [set up SSH](h
 
 Now, if you open your new GitHub repository, you should see your files neatly stashed there.
 
-
+... to be continued ...
 
