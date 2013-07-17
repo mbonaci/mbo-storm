@@ -2,11 +2,10 @@
   <img src="https://si0.twimg.com/profile_images/2163499910/Screen_shot_2012-04-24_at_6.22.00_PM_bigger.png">
 </a>
 <br>
-Exploring <a href="https://github.com/nathanmarz/storm">Twitter Storm</a>
-<br>
+### My exploration of [Twitter Storm](http://storm-project.net).
 
-I wrote a [blog post](https://github.com/mbonaci/mbo-storm/blob/master/storm-maven-git-eclipse.md) about setting up Storm in Eclipse IDE using maven, git and GitHub.
-
+Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm).  
+My [blog post](https://github.com/mbonaci/mbo-storm/blob/master/storm-maven-git-eclipse.md) about setting up Storm development environment in eclipse using maven, git and GitHub.
 <p>
 Storm is distributed and fault-tolerant realtime computation platform that offers stream processing, continuous computation, distributed RPC, and more.
 </p>
