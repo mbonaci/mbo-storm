@@ -5,8 +5,10 @@
 Exploring <a href="https://github.com/nathanmarz/storm">Twitter Storm</a>
 <br>
 
+I wrote a [blog post](https://github.com/mbonaci/mbo-storm/blob/master/storm-maven-git-eclipse.md) about setting up Storm in Eclipse IDE using maven, git and GitHub.
+
 <p>
-Distributed and fault-tolerant realtime computation: stream processing, continuous computation, distributed RPC, and more on http://storm-project.net
+Storm is distributed and fault-tolerant realtime computation platform that offers stream processing, continuous computation, distributed RPC, and more.
 </p>
 
 <p>
@@ -22,4 +24,4 @@ Storm has many use cases: realtime analytics, online machine learning, continuou
 
 <p>
 Storm <a href="http://storm-project.net/about/integrates.html">integrates</a> with the queueing and database technologies you already use. A Storm topology consumes streams of data and processes those streams in arbitrarily complex ways, repartitioning the streams between each stage of the computation however needed. Read more in <a href="https://github.com/nathanmarz/storm/wiki/Tutorial">the tutorial</a>.
-</p>
+</p>  
