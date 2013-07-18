@@ -39,7 +39,7 @@ To choose default archetype, `maven-archetype-quickstart`, just hit enter or typ
 * Next, `package`. We wont go into that. Hit enter.
 * Maven now presents you with the choices you made and asks your confirmation. Type `Y` and hit enter.  
 `BUILD SUCCESSFUL` no way, you did it! If you examine your newly created project folder, you'll see all the dirs and files that `maven-archetype-quickstart` created for us. That's the standard maven project folder structure. Not much, I know, but we don't need fancy stuff, quickstart'll work just fine, one main class and one test class. 
-* To check if you can successfuly build your new, still rather empty project, `cd` to `my-own-storm` and execute `mvn install`. You should see `BUILD SUCCESSFUL` somewhere in your terminal. If you now take a look at project's root, you'll se that this step created `target` folder. That's like your project's output folder with compiled java files and some other irrelevant stuff.  
+* To check if you can successfuly build your new, still rather empty project, `cd` to `my-own-storm` and execute `mvn install`. You should see `BUILD SUCCESSFUL` somewhere in your terminal. If you now take a look at project's root, you'll see that this step created `target` folder. That's your project's output folder with compiled java files and some other irrelevant stuff.  
 
 If you encounter some weird error messages, like `use -source 5 or higher to enable static import declarations`, add this to your pom.xml located at project's root (```<build>``` tag should go at the bottom, just above, ```</project>``` tag, like in the next snippet):
 
@@ -71,7 +71,7 @@ So far, we have created our new `my-own-storm` project, with Storm nowhere to be
         <url>http://clojars.org/repo</url> 
       </repository> 
     </repositories> 
-  https://github.com/mbonaci/mbo-storm-copy/settings
+
     <dependency>
       <groupId>storm</groupId>
       <artifactId>storm</artifactId>
@@ -107,7 +107,7 @@ You can use `https` to communicate with GitHub, but I suggest you [set up SSH](h
 Now, if you open your new GitHub repository, you should see your files neatly stashed there. Good stuff!
 
 ### Linking maven to GitHub repo
-You can either continue to use git from the command line or you can use maven to talk to your github repository:
+You can either continue to use git from the command line (in which case you can skip to [Eclipse section](#eclipse)) or you can use maven to talk to your github repository. To do the latter:
 * Add these snippets into `pom.xml` (again, [check out](https://gist.github.com/mbonaci/5996278) where to put them if you need):
 
 ```xml
@@ -128,7 +128,7 @@ Since you used latest versions of other components, you can also use [latest ver
 
 ### Eclipse
 * In terminal, assuming you're still in `my-own-storm` dir, execute `mvn eclipse:eclipse`.
-This will create eclipse related project files: `.project`, `.classpath` and `.settings` folder with some core preferences inside. If your `.jar` files are not listed under `Referenced Libraries`, refresh eclipse workspace or restart eclipse.
+This will create eclipse related project files: `.project`, `.classpath` and `.settings` folder with some core preferences inside. After you open eclipse, if your `.jar` files are not listed under `Referenced Libraries`, refresh your workspace or restart eclipse.
 
 ### Play with Storm (finally)
 * Next, from your **`repos`** directory execute `git clone https://github.com/nathanmarz/storm-starter.git`
