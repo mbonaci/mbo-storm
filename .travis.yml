@@ -4,3 +4,5 @@ scala:
 jdk:
  - oraclejdk7
  - openjdk7
+install: mvn install -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -DskipTests=true -B
+script: mvn test -Dmaven.compiler.target=1.7 -Dmaven.compiler.source=1.7 -B
