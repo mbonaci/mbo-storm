@@ -1,20 +1,24 @@
 # Setting up a new [Storm](http://storm-project.net/)-based project
-This short (ok, relatively short) tutorial will guide you through the process of setting up fresh Twitter Storm project in your Eclipse IDE. You'll be using Maven to automate dependencies, Git to manage versions and GitHub to publish your source. Although Storm is written primarily in Clojure we'll be using Java API. This should be applicable to your OS, whether you're on Linux, Mac or Windows.
+This short (ok, relatively short) tutorial will guide you through the process of setting up fresh Twitter Storm project in your Eclipse IDE. You'll be using Maven to automate dependencies, Git to manage versions and GitHub to publish your source. Although Storm is written primarily in Clojure we'll be using Java API. This should be applicable to your OS, whether you're on Linux, Mac or Windows.  
+
+If you decide to follow this tutorial please send feedback on whether everything went smooth. Also, feel free to comment on any wrong practices I exhibited. I'd appreciate even more if you decide to send pull request with corrections.  
 
 ### A note about maven
-I was really never much of a maven worshiper, if I may say so. I use it because it's so widespread and it does its job (eventually) so that I simply could not afford to ignore it. But there are better tools out there. E.g. a great ruby tool for Java development automation called [Apache Buildr](http://buildr.apache.org/) that's much simpler and easier to use. Unfortunately, we'll have to postpone covering it until it gains more traction in the community. If you want to indulge yourself in more maven's *suckassness*, take a look at [the spymemcached author's great blog post](http://dustin.github.io/2010/04/01/why-not-maven.html). Or [grails author's post](http://graemerocher.blogspot.com/2008/01/why-grails-doesnt-use-maven.html). If not, move on, your loss.
+*Please skip to [Relatively quick start](#relatively-quick-start) if you're not interested in my random ramblings about automation management.*  
+
+I was really never much of a maven worshiper, if I may say so. I use it because it's so widespread and, I have to admit, it does its job (eventually), so that I simply could not afford to ignore it. But there are better tools out there. E.g. a great ruby-based tool for Java development automation called [Apache Buildr](http://buildr.apache.org/) that's much simpler and easier to use. Unfortunately, we'll have to postpone covering it until it gains more traction in the community. "Evolved Maven" is how authors of [Gradle](http://www.gradle.org/) would like their automation management tool to be percieved. And rightfully so. If you're in Clojure land, then you know that you have to look no further than [Leiningen](http://leiningen.org/) (or "lein", as its users affectionately call it). If you want to indulge yourself in more maven's *suckassness*, take a look at [the spymemcached author's great blog post](http://dustin.github.io/2010/04/01/why-not-maven.html). Or [grails author's post](http://graemerocher.blogspot.com/2008/01/why-grails-doesnt-use-maven.html). If not, move on, your loss.
 
 ## Relatively quick start
 Follow the steps bellow to start this bitch from the ground up:
 
 ### Prereqs
 I won't waste your time describing how to set up the basics. I'll assume you either already have these or that you'll be able to manage the basic setup yourself.
-* [Install latest Java (JRE or JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+* [Install latest JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 * [Install latest Git](http://git-scm.com/downloads).
 * [Install latest Maven](http://maven.apache.org/download.html).
 * [Install latest Eclipse](http://www.eclipse.org/downloads).
-* [Install latest Eclipse EGit plugin](http://marketplace.eclipse.org/content/egit-git-team-provider).
-* [Install latest Eclipse "Maven Integration For Eclipse" plugin](http://marketplace.eclipse.org/content/maven-integration-eclipse).
+* Optionally [Install latest Eclipse EGit plugin](http://marketplace.eclipse.org/content/egit-git-team-provider).
+* Optionally [Install latest Eclipse "Maven Integration For Eclipse" plugin](http://marketplace.eclipse.org/content/maven-integration-eclipse).
 * [Create <del>latest</del> GitHub account](http://github.com).
 
 [Here](http://rogerdudler.github.io/git-guide/) is a nice, simple and good looking git guide, I quote: "no deep shit!".  
@@ -107,7 +111,7 @@ You can use `https` to communicate with GitHub, but I suggest you [set up SSH](h
 Now, if you open your new GitHub repository, you should see your files neatly stashed there. Good stuff!
 
 ### Linking maven to GitHub repo
-You can either continue to use git from the command line (in which case you can skip to [Eclipse section](#eclipse)) or you can use maven to talk to your github repository. To do the latter:
+You can either continue to use git from the command line (in which case you can skip to the [Eclipse section](#eclipse)) or you can use maven to talk to your github repository (known to be quirky). To do the latter:
 * Add these snippets into `pom.xml` (again, [check out](https://gist.github.com/mbonaci/5996278) where to put them if you need):
 
 ```xml
@@ -123,17 +127,17 @@ You can either continue to use git from the command line (in which case you can 
       <version>2.4.1</version>
     </plugin>
 ```
-Since you used latest versions of other components, you can also use [latest version](http://maven.apache.org/plugins/index.html) of `maven-release-plugin` (where the 'Version' column meets the 'release' row).
+Since you used latest versions of other components, you can also use [latest version](http://maven.apache.org/plugins/index.html) of `maven-release-plugin` (copy the version number from where the 'Version' column intersects the 'release' row).
 
 
 ### Eclipse
 * In terminal, assuming you're still in `my-own-storm` dir, execute `mvn eclipse:eclipse`.
 This will create eclipse related project files: `.project`, `.classpath` and `.settings` folder with some core preferences inside. After you open eclipse, if your `.jar` files are not listed under `Referenced Libraries`, refresh your workspace or restart eclipse.
 
-### Play with Storm (finally)
+### Playing with Storm (finally)
 * Next, from your **`repos`** directory execute `git clone https://github.com/nathanmarz/storm-starter.git`
 That will clone Nathan Marz's [storm-starter project](https://github.com/nathanmarz/storm-starter) so you can finally start playing with Storm's spouts, bolts and topologies.
-* You'll have to manually copy java files (that are needed for the demo you chose) from your freshly cloned `storm-starter` project into your own-storm's `src/main/java/...` folder.  
-I suggest you start with BigData's HelloWorld - the [WordCount](https://github.com/mbonaci/mbo-storm/tree/master/src/main/java/hr/mbo/storm).
+* You'll have to manually copy java files (that are needed for a specific demo) from your freshly cloned `storm-starter` project into your own-storm's `src/main/java/...` folder.  
+I suggest you start with the HelloWorld of BigData - the [WordCount](https://github.com/mbonaci/mbo-storm/tree/master/src/main/java/hr/mbo/storm). You can check out the whole mbo-storm repo and fire the WordCount topology to see how it works.
 
 ### Now go and whip up some awesome topologies...  
