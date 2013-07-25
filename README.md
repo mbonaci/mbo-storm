@@ -2,13 +2,17 @@
   <img src="https://si0.twimg.com/profile_images/2163499910/Screen_shot_2012-04-24_at_6.22.00_PM_bigger.png">
 </a>
 <br>
-### My exploration of [Twitter Storm](http://storm-project.net).
+## My exploration of [Twitter Storm](http://storm-project.net).
 
-Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm).  
-My [blog post](https://github.com/mbonaci/mbo-storm/blob/master/storm-maven-git-eclipse.md) about setting up Storm development environment in eclipse using maven, git and GitHub.
-<p>
-Storm is distributed and fault-tolerant realtime computation platform that offers stream processing, continuous computation, distributed RPC, and more.
-</p>
+### Links
+* Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm).  
+* My [wiki page](https://github.com/mbonaci/mbo-storm/wiki/Storm-setup-in-Eclipse-with-Maven,-Git-and-GitHub) about setting up Storm development environment in eclipse using maven, git and GitHub.  
+* My [wiki page](https://github.com/mbonaci/mbo-storm/wiki/Integrate-Travis-CI-with-your-GitHub-repo) about integrating a GitHub repo with [Travis-CI](http://travisci.org).  
+
+---  
+
+Storm is distributed and fault-tolerant realtime computation platform that offers stream processing, continuous computation, distributed RPC, and more.  
+
 
 <p>
 Storm is a <a href="http://storm-project.net/about/free-and-open-source.html">free and open source</a> distributed realtime computation system. Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing. Storm is <a href="http://storm-project.net/about/simple-api.html">simple</a>, can be used with <a href="http://storm-project.net/about/multi-language.html">any programming language</a>, and is a lot of fun to use!
