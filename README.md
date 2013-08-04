@@ -5,9 +5,10 @@
 ## My exploration of [Twitter Storm](http://storm-project.net).
 
 ### Links
-* Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm).  
-* My [wiki page](https://github.com/mbonaci/mbo-storm/wiki/Storm-setup-in-Eclipse-with-Maven,-Git-and-GitHub) about setting up Storm development environment in eclipse using maven, git and GitHub.  
-* My [wiki page](https://github.com/mbonaci/mbo-storm/wiki/Integrate-Travis-CI-with-your-GitHub-repo) about integrating a GitHub repo with [Travis-CI](http://travisci.org).  
+* Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm)
+* My [tutorial on setting up Storm in Eclipse with maven, git and GitHub](https://github.com/mbonaci/mbo-storm/wiki/Storm-setup-in-Eclipse-with-Maven,-Git-and-GitHub)  
+* My [reminder note about integrating a GitHub repo with Travis-CI](https://github.com/mbonaci/mbo-storm/wiki/Integrate-Travis-CI-with-your-GitHub-repo)
+* My [completely unnecesarry guide for setting up a GitHub project build on Drone.io]([Completely unnecesarry guide for setting up a GitHub project build on Drone.io](https://github.com/mbonaci/mbo-storm/wiki/Completely-unnecesarry-guide-for-setting-up-a-GitHub-project-build-on-Drone.io))
 
 ---  
 
