@@ -2,7 +2,8 @@
   <img src="https://si0.twimg.com/profile_images/2163499910/Screen_shot_2012-04-24_at_6.22.00_PM_bigger.png">
 </a>
 <br>
-## My exploration of [Twitter Storm](http://storm-project.net).
+## My exploration of [Twitter Storm](http://storm-project.net)
+[![Build Status](https://travis-ci.org/mbonaci/mbo-storm.png?branch=master)](https://travis-ci.org/mbonaci/mbo-storm)
 
 ### Links
 * Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm)
