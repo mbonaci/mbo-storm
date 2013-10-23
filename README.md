@@ -6,6 +6,8 @@
 <small>Wow, two build trackers (just because I can):</small>  
 [![Travis-ci Build Status](https://travis-ci.org/mbonaci/mbo-storm.png?branch=master)](https://travis-ci.org/mbonaci/mbo-storm)
 [![Drone.io Build Status](https://drone.io/github.com/mbonaci/mbo-storm/status.png)](https://drone.io/github.com/mbonaci/mbo-storm/latest)
+<br>
+[![Codeship Status](https://www.codeship.io/projects/295eecb0-1e30-0131-5e18-56138275c44e/status)](https://drone.io/github.com/mbonaci/mbo-storm/latest)
 
 ### Links
 * Storm author [Nathan Marz's github repo](https://github.com/nathanmarz/storm)
