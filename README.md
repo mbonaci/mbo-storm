@@ -33,3 +33,7 @@ Storm has many use cases: realtime analytics, online machine learning, continuou
 <p>
 Storm <a href="http://storm-project.net/about/integrates.html">integrates</a> with the queueing and database technologies you already use. A Storm topology consumes streams of data and processes those streams in arbitrarily complex ways, repartitioning the streams between each stage of the computation however needed. Read more in <a href="https://github.com/nathanmarz/storm/wiki/Tutorial">the tutorial</a>.
 </p>  
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mbonaci/mbo-storm/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
