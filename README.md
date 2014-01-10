@@ -1,7 +1,3 @@
-<a href="https://twitter.com/stormprocessor">
-  <img src="https://si0.twimg.com/profile_images/2163499910/Screen_shot_2012-04-24_at_6.22.00_PM_bigger.png">
-</a>
-<br>
 ## My exploration of [Twitter Storm](http://storm-project.net)
 <small>Wow, three build trackers (just because I can):</small>  
 [![Codeship Status](https://www.codeship.io/projects/295eecb0-1e30-0131-5e18-56138275c44e/status)](https://www.codeship.io/projects/8468)
